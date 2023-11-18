@@ -93,8 +93,6 @@ def arithmetic_encode(src):
             lb *= 2
             ub = 2 * ub + 1
 
-    enc_nums.extend([0] + [1] * strdl if lb < qtr else [1] + [0] * strdl)
-
     return enc_nums
 
 def arithmetic_decode(enc, prob, len_txt):
